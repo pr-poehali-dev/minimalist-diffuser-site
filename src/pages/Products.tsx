@@ -33,14 +33,14 @@ const products = {
       id: 1, 
       name: "Бергамот", 
       price: "1 200 ₽", 
-      image: "/placeholder.svg",
+      image: "https://cdn.poehali.dev/files/cb00dcec-817b-4d80-8c3f-a342348eca10.jpg",
       description: "Освежающий цитрусовый аромат для вашего автомобиля"
     },
     { 
       id: 2, 
       name: "Жасмин", 
       price: "1 200 ₽", 
-      image: "/placeholder.svg",
+      image: "https://cdn.poehali.dev/files/cb00dcec-817b-4d80-8c3f-a342348eca10.jpg",
       description: "Нежный цветочный аромат для поездок в городе"
     }
   ],
@@ -76,7 +76,7 @@ const ProductCard = ({ product }: { product: typeof products.diffusers[0] }) => 
         <img 
           src={product.image} 
           alt={product.name} 
-          className="w-1/2 h-1/2 object-contain transition-transform group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform group-hover:scale-105"
         />
       </div>
       <h3 className="text-lg font-normal text-kendini-brown">{product.name}</h3>
